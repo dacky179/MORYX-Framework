@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net45;net5.0-windows</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net461;net5.0-windows</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Description>Provides runtime mode for running as Windows Service.</Description>
     <CreatePackage>true</CreatePackage>
@@ -12,7 +12,7 @@
     <PackageReference Include="CommandLineParser" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'=='net45'">
+  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.ServiceProcess" />
   </ItemGroup>
